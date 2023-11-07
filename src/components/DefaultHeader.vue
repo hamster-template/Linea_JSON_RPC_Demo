@@ -9,7 +9,7 @@
                 :options="actionOptions" @select="switchNetwork(actionVal)">
       </a-select>
       <div style="margin-left: 8px">
-        <button v-if="!isConnectedWallet" @click="connectWallet">Connect Wallet</button>
+        <button v-if="!isConnectedWallet" @click="connectWallet">Connect MetaMask</button>
         <a-dropdown v-if="isConnectedWallet">
           <div class="wallet">
             <img src="../assets/metamask-icon.svg" style="margin-right: 4px"/>
@@ -152,9 +152,9 @@
     font-weight: 400;
     font-size: 14px;
     background: #df9100;
-    border-radius: 20px;
+    border-radius: 18px;
     height: 32px;
-    width: 120px;
+    width: 140px;
     outline: none;
     border: 0px solid transparent;
   }
@@ -182,7 +182,7 @@
   background-color: #df9100 !important;
 }
 .ant-select:not(.ant-select-customize-input) .ant-select-selector {
-  border-radius: 8px;
+  border-radius: 8px!important;
 }
 .ant-select{
   color: white;
