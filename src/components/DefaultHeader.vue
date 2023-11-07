@@ -9,7 +9,7 @@
                 :options="actionOptions" @select="switchNetwork(actionVal)">
       </a-select>
       <div style="margin-left: 8px">
-        <button v-if="!isConnectedWallet" @click="connectWallet">Connect Wallet</button>
+        <button v-if="!isConnectedWallet" @click="connectWallet">Connect MetaMask</button>
         <a-dropdown v-if="isConnectedWallet">
           <div class="wallet">
             <img src="../assets/metamask-icon.svg" style="margin-right: 4px"/>
